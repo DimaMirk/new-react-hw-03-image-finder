@@ -76,9 +76,14 @@ img {
   width: 48px;
   height: 48px;
   border: 0;
+  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0.6;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  outline: none;
 }
 
 .SearchForm-button:hover {
@@ -178,7 +183,6 @@ img {
 .Button {
   padding: 8px 16px;
   border-radius: 2px;
-  width: 200px;
   background-color: #3f51b5;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
@@ -200,33 +204,4 @@ img {
 .Button:hover,
 .Button:focus {
   background-color: #303f9f;
-}
-
-.ButtonBlock{
-  display: flex;
-  justify-content: center;
-}
-
-.LoaderBlock{
-  display: flex;
-  justify-content: center;
-}
-.Loader{
-  width: 50px;
-  height: 50px;
-  color: #303f9f;
-  animation-name: spin;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
